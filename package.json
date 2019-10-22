@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test-global",
-    "netflix-app":"concurrently npm run client npm run server",
-    "client":"npm run ng serve --prefix client-side/",
-    "server":"npm run back-end"
+    "netflix-app": "concurrently \"npm run client\" \"npm run server\"",
+    "client": "npm run start --prefix client-side/",
+    "server": "npm run back-end --prefix server-side/"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/kompanycoder/mini-netflix/issues"
   },
-  "homepage": "https://github.com/kompanycoder/mini-netflix#readme"
+  "homepage": "https://github.com/kompanycoder/mini-netflix#readme",
+  "dependencies": {
+    "concurrently": "^5.0.0"
+  }
 }
