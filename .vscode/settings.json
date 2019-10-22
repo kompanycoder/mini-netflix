@@ -1,0 +1,4 @@
+{
+    "deepscan.enable": true,
+    "git.ignoreLimitWarning": true
+}

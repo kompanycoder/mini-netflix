@@ -1,0 +1,30 @@
+{
+  "name": "mini-netflix",
+  "version": "1.0.0",
+  "description": "mini-netflix app to display movies and save user preferences",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test-global",
+    "netflix-app": "concurrently \"npm run client\" \"npm run server\"",
+    "client": "npm run start --prefix client-side/",
+    "server": "npm run back-end --prefix server-side/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kompanycoder/mini-netflix.git"
+  },
+  "keywords": [
+    "angular",
+    "express",
+    "netflix"
+  ],
+  "author": "kompanycoder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kompanycoder/mini-netflix/issues"
+  },
+  "homepage": "https://github.com/kompanycoder/mini-netflix#readme",
+  "dependencies": {
+    "concurrently": "^5.0.0"
+  }
+}
