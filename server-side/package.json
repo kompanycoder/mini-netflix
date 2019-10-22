@@ -1,0 +1,16 @@
+{
+  "name": "server-side",
+  "version": "1.0.0",
+  "description": "backend for the mini-netflix app",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "keywords": [
+    "backend",
+    "express",
+    "node"
+  ],
+  "author": "kompanycoder",
+  "license": "ISC"
+}
