@@ -4,7 +4,10 @@
   "description": "mini-netflix app to display movies and save user preferences",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test-global"
+    "test": "mocha test-global",
+    "netflix-app":"concurrently npm run client npm run server",
+    "client":"npm run ng serve --prefix client-side/",
+    "server":"npm run back-end"
   },
   "repository": {
     "type": "git",
