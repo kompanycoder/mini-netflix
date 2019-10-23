@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'client-side'`, () => {
+  it(`should have as title 'Mini-Netflix'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('client-side');
+    expect(app.title).toEqual('Mini-Netflix');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('client-side app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Mini-Netflix app is running!');
   });
 });
