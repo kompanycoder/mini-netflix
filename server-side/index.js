@@ -3,12 +3,12 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const morgan =require("morgan");
-const port = process.env.PORT || 3000;
+const port = 3000;
 const app = express();
 
 // Include config 
-// const configOptions = require("./config/config").get();
-// console.log(configOptions.envType);
+// const configOptions = require("./config/config").get(env);
+// console.log(configOptions.body);
 
 
 // middlewares

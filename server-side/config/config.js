@@ -10,6 +10,6 @@ let config = {
   }
 };
 
-module.exports = function get(env) {
-    return config.production || config.development;
+module.get = (env) => {
+    return config[production] || config[development];
 };
