@@ -1,4 +1,4 @@
-let config = {
+const config = {
   production: {
     online : "prod-mode",
     dbUrl: "mongoDb on line Url"
@@ -6,10 +6,10 @@ let config = {
   development: {
     online: "dev-mode",
     port: process.env.PORT || 3000,
-    dbUrl: "mongodb:localhost:netflixDb"
+    dbUrl: "mongodb://localhost:27017/netflixDb"
   }
 };
 
-module.get = function(env) {
-    return config[env] || config[env];
-};
+exports.get = (env)=> {
+    return config[env] || config.development;
+}

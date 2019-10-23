@@ -7,8 +7,8 @@ const port = 3000;
 const app = express();
 
 // Include config 
-// const configOptions = require("./config/config").get(env);
-// console.log(configOptions.body);
+const configOptions = require("./config/config").get(process.env.NODE_ENV);
+console.log(configOptions);
 
 
 // middlewares
