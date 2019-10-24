@@ -1,0 +1,11 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "client-side/package.json",
+        "package.json",
+        "server-side/package.json"
+      ]
+    }
+  }
+}
