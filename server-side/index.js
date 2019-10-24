@@ -3,8 +3,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const morgan =require("morgan");
-const port = process.env.PORT || 3000;
+const port = 3000;
 const app = express();
+
+// Include config 
+const configOptions = require("./config/config").get(process.env.NODE_ENV);
+console.log(configOptions);
+
 
 // middlewares
 app.use(cors());
@@ -12,13 +17,10 @@ app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-//  init home route for testing
-app.get('/',(req,res)=>{
-    res.json({
-        "success": true,
-        "home": "Connected to mini-netflix backend successfully!!!"
-    })
-})
+// app routes here
+const mainRoutes = require("./routes/main");
+
+app.use(mainRoutes);
 
 
 
