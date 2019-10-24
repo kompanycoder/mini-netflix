@@ -2,7 +2,7 @@
 Netflix app built in angular ✅, express ✅, (other helpful packages: consult package.json) ✅ and node✅.
 
 ###### To run the complete fullstack Project: 
-    npm run netflix-app
+   - npm run netflix-app
 
 
 #### On completion:
