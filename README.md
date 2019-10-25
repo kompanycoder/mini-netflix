@@ -1,11 +1,11 @@
-## Mini-netflix App
+## :rabbit: Mini-netflix App
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/kompanycoder/mini-netflix.svg)](https://greenkeeper.io/)
 
-Netflix app built in angular ✅, express ✅, (other helpful packages: consult package.json) ✅ and node✅.
+Mini-Netflix app built in angular ✅, express ✅, (other helpful packages: consult package.json) ✅ and node✅.
 
 ###### To run the complete fullstack Project: 
-   - npm run netflix-app
+    npm run netflix-app
 
 
 #### On completion:
