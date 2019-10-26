@@ -1,8 +1,6 @@
 ## :rabbit: Mini-netflix App
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/kompanycoder/mini-netflix.svg)](https://greenkeeper.io/)
-
-[![DeepScan grade](https://deepscan.io/api/teams/5092/projects/7742/branches/83169/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5092&pid=7742&bid=83169)
+[![Greenkeeper badge](https://badges.greenkeeper.io/kompanycoder/mini-netflix.svg)](https://greenkeeper.io/)  [![DeepScan grade](https://deepscan.io/api/teams/5092/projects/7742/branches/83169/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5092&pid=7742&bid=83169)
 
 Mini-Netflix app built in angular ✅, express ✅, (other helpful packages: consult package.json) ✅ and node✅.
 
