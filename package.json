@@ -8,6 +8,7 @@
     "test-server": "npm run test-server-side --prefix server-side/",
     "test-client": "npm run test-client-side --prefix client-side/",
     "netflix-app": "concurrently \"npm run client\" \"npm run server\"",
+    "netflix-build":"concurrently \"npm run build --prefix client-side/\"",
     "client": "npm run start --prefix client-side/",
     "server": "npm run back-end --prefix server-side/"
   },
