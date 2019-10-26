@@ -1,7 +1,7 @@
 const config = {
   production: {
     online : "prod-mode",
-    dbUrl: "mongoDb on line Url"
+    dbUrl: "mongoDb online Url"
   },
   development: {
     online: "dev-mode",

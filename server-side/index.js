@@ -23,8 +23,13 @@ app.use(bodyParser.json());
 
 // app routes here
 const mainRoutes = require("./routes/main");
+const userRoutes = require("./routes/user/userRoutes");
+const movieRoutes = require("./routes/movie/movieRoutes");
 
+// include routes in app
 app.use(mainRoutes);
+app.use(userRoutes);
+app.use(movieRoutes);
 
 // init app
 app.listen(configOptions.port, () => {
