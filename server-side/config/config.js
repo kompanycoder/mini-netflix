@@ -1,7 +1,7 @@
 const config = {
   production: {
     online : "prod-mode",
-    dbUrl: "mongoDb online Url"
+    dbUrl: "mongodb+srv://kompany:<password>@cluster0-vgfi8.mongodb.net/test?retryWrites=true&w=majority"
   },
   development: {
     online: "dev-mode",
