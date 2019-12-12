@@ -10,7 +10,9 @@
     "netflix-app": "concurrently \"npm run client\" \"npm run server\"",
     "netflix-build": "concurrently \"npm run build --prefix client-side/\"",
     "client": "npm run start --prefix client-side/",
-    "server": "npm run back-end --prefix server-side/"
+    "server": "npm run back-end --prefix server-side/",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -30,7 +32,9 @@
   "dependencies": {
     "concurrently": "^5.0.0",
     "mocha": "^6.2.2",
-    "rollbar": "^2.13.0"
+    "rollbar": "^2.13.0",
+    "snyk": "^1.258.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
