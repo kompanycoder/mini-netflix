@@ -29,7 +29,7 @@
   "homepage": "https://github.com/kompanycoder/mini-netflix#readme",
   "dependencies": {
     "concurrently": "^5.0.2",
-    "mocha": "^6.2.2",
+    "mocha": "^7.1.1",
     "rollbar": "^2.14.4"
   },
   "devDependencies": {}
