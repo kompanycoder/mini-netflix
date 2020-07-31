@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test-server-side": "mocha",
+    "install-server": "npm install",
     "start": "node index.js --trace-warnings",
     "back-end": "nodemon start"
   },
