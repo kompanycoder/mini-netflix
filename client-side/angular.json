@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "client-side"
+  "defaultProject": "client-side",
+  "cli": {
+    "analytics": false
+  }
 }
