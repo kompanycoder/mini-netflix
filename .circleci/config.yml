@@ -7,7 +7,9 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:10.16.3
+      - image: circleci/node:8-browsers
+        environment:
+          CHROME_BIN: "/usr/bin/google-chrome"
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -34,4 +36,5 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: npm run test-global
+      - run: npm run test-client
+      - run: npm run test-server

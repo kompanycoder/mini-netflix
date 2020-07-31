@@ -4,7 +4,7 @@
   "description": "mini-netflix app to display movies and save user preferences",
   "main": "index.js",
   "scripts": {
-    "test-global": "concurrently \"npm run test-client\"",
+    "test-global": "concurrently \"npm run test-client\" \"npm run test-server\"",
     "test-server": "npm run test-server-side --prefix server-side/",
     "test-client": "npm run test-client-side --prefix client-side/",
     "netflix-app": "concurrently \"npm run client\" \"npm run server\"",
