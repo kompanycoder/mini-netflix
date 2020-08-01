@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { MoviesLayoutComponent } from './components/layout/movies-layout/movies-layout.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const rollbarConfig = {
   accessToken: '20b080fd08b04ca384fc5c68d8e13cb6',
@@ -24,7 +25,7 @@ export const RollbarService = new InjectionToken<Rollbar>('rollbar');
 export class RollbarErrorHandler implements ErrorHandler {
   constructor(@Inject(RollbarService) private rollbar: Rollbar) {}
 
-  handleError(err:any) : void {
+  handleError(err: any): void {
     this.rollbar.error(err.originalError || err);
   }
 }
@@ -42,7 +43,8 @@ export function rollbarFactory() {
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: ErrorHandler, useClass: RollbarErrorHandler },
