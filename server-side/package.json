@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test-server-side": "mocha",
-    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+    "install-server": "npm install",
+    "start": "node index.js --trace-warnings",
     "back-end": "nodemon start"
   },
   "keywords": [
@@ -16,17 +19,19 @@
   "author": "kompanycoder",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "chai": "^4.2.0",
-    "concurrently": "^5.0.0",
-    "cookie-parser": "^1.4.4",
+    "concurrently": "^5.2.0",
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mocha": "^6.2.2",
-    "mongoose": "^5.7.7",
-    "morgan": "^1.9.1"
+    "mocha": "^7.0.1",
+    "snyk": "^1.316.1"
+    "mongoose": "^5.9.26",
+    "morgan": "^1.10.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
