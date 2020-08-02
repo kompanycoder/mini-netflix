@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/kompanycoder/mini-netflix#readme",
   "dependencies": {
-    "concurrently": "^5.0.2",
+    "concurrently": "^5.2.0",
     "mocha": "^8.1.0",
     "rollbar": "^2.19.1"
   },
