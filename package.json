@@ -32,7 +32,7 @@
   "dependencies": {
     "concurrently": "^5.0.2",
     "mocha": "^8.1.0",
-    "rollbar": "^2.14.4"
+    "rollbar": "^2.19.1"
   },
   "devDependencies": {}
 }
