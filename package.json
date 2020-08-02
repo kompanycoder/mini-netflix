@@ -4,13 +4,17 @@
   "description": "mini-netflix app to display movies and save user preferences",
   "main": "index.js",
   "scripts": {
-    "test-global": "concurrently \"npm run test-server\"",
+    "test-global": "concurrently \"npm run test-client\"",
     "test-server": "npm run test-server-side --prefix server-side/",
     "test-client": "npm run test-client-side --prefix client-side/",
     "netflix-app": "concurrently \"npm run client\" \"npm run server\"",
-    "netflix-build": "concurrently \"npm run build --prefix client-side/\"",
+    "install": "concurrently \"npm run netflix-install-client\" \"npm run netflix-install-server\"",
+    "netflix-install-client": "npm run install-client --prefix client-side/",
+    "netflix-install-server": "npm run install-server --prefix server-side/",
     "client": "npm run start --prefix client-side/",
-    "server": "npm run back-end --prefix server-side/"
+    "server": "npm run back-end --prefix server-side/",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -28,9 +32,11 @@
   },
   "homepage": "https://github.com/kompanycoder/mini-netflix#readme",
   "dependencies": {
-    "concurrently": "^5.0.2",
-    "mocha": "^7.0.1",
-    "rollbar": "^2.14.4"
+    "concurrently": "^5.2.0",
+    "snyk": "^1.316.1"
+    "mocha": "^8.1.0",
+    "rollbar": "^2.19.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
