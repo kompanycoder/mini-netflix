@@ -1,6 +1,5 @@
 {
-  "name": "server-side",
-  "version": "1.0.0",
+  "name": "miniflix-backend",
   "description": "backend for the mini-netflix app",
   "main": "index.js",
   "scripts": {
@@ -33,5 +32,9 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {},
-  "snyk": true
+  "snyk": true,
+  "directories": {
+    "test": "test"
+  },
+  "version": "1.0.2"
 }
