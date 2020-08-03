@@ -4,6 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test-server-side": "mocha test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect",
     "install-server": "npm install",
     "start": "node index.js --trace-warnings",
     "back-end": "nodemon start"
