@@ -1,9 +1,8 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/mini-netflix
     docker:
-      - image: circleci/node:lts-stretch
+      - image: circleci/node:14.5.0
     steps:
       - checkout
       - restore_cache:
