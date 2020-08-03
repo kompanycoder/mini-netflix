@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/my-project
+    working_directory: ~/mini-netflix
     docker:
       - image: circleci/node:lts-stretch
     steps:
@@ -13,4 +13,4 @@ jobs:
           key: v1-dependencies-{{ checksum "package-lock.json" }}
           paths:
             - "node_modules"
-      - run: npm run test-client-side
+      - run: npm run test-global
