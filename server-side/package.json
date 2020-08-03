@@ -6,7 +6,7 @@
   "scripts": {
     "test-server-side": "mocha",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
     "install-server": "npm install",
     "start": "node index.js --trace-warnings",
     "back-end": "nodemon start"
