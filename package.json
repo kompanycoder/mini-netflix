@@ -1,6 +1,6 @@
 {
-  "name": "mini-netflix",
-  "version": "1.0.0",
+  "name": "flix-net",
+  "version": "1.0.5",
   "description": "mini-netflix app to display movies and save user preferences",
   "main": "index.js",
   "scripts": {
