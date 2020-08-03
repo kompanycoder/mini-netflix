@@ -12,9 +12,7 @@
     "netflix-install-client": "npm run install-client --prefix client-side/",
     "netflix-install-server": "npm run install-server --prefix server-side/",
     "client": "npm run start --prefix client-side/",
-    "server": "npm run back-end --prefix server-side/",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "server": "npm run back-end --prefix server-side/"
   },
   "repository": {
     "type": "git",
